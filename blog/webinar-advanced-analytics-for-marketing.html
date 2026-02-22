@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webinar: Advanced Analytics for Marketing — Alex Papageorgiou</title>
+  <meta name="description" content="Guest speaker at Improvado.io webinar on advanced marketing analytics — covering CLV, conversion prediction, anomaly detection, forecasting and attribution.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="Alex Papageorgiou Consulting"></a>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../testimonials.html">Testimonials</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+        <li><a href="../contact.html" class="btn btn-primary">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="post-back container">
+    <a href="../blog.html">Back to Blog</a>
+  </div>
+
+  <header class="post-header">
+    <div class="container--prose">
+      <h1>Webinar: Advanced Analytics for Marketing</h1>
+      <div class="post-meta">
+        <span class="post-date">19 April 2020</span>
+        <span class="post-tag">Webinar</span>
+      </div>
+    </div>
+  </header>
+
+  <article class="post-body">
+    <div class="container--prose">
+      <img src="https://www.alex-papageo.com/uploads/2/3/5/7/23571418/web_orig.png" alt="Advanced Analytics for Marketing webinar" style="width:100%;border-radius:8px;margin-bottom:1.5rem;">
+
+      <p>Earlier this week I had the pleasure to be a guest speaker on Hailey Friedman's (Improvado.io) webinar for digital marketers and marketing analysts.</p>
+
+      <p>The topic was about advanced marketing analytics and I had the opportunity to talk about some of the key marketing analytics techniques including:</p>
+
+      <ul>
+        <li>Customer life time value</li>
+        <li>Conversion prediction</li>
+        <li>Anomaly detection</li>
+        <li>Forecasting</li>
+        <li>Marketing attribution</li>
+      </ul>
+
+      <p>The recording of the webinar is available via this link:<br>
+      <a href="https://event.webinarjam.com/login/8vrn6hgclb7hoso" target="_blank" rel="noopener">Watch the webinar recording →</a></p>
+
+      <p>The slides are available on SlideShare:<br>
+      <a href="https://www.slideshare.net/alpapag/webinar-advanced-marketing-analytics" target="_blank" rel="noopener">View slides on SlideShare →</a></p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-name">Alex Papageorgiou Consulting</span>
+      <p class="footer-meta">&copy; <span id="yr"></span> Alex Papageorgiou &middot; <a href="mailto:alex@alex-papageo.com">alex@alex-papageo.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => { const open = links.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', open); });
+  </script>
+</body>
+</html>

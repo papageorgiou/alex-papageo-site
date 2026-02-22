@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickstream Analytics with Markov Chains — London Measurecamp #12 — Alex Papageorgiou</title>
+  <meta name="description" content="Overview of clickstream analysis using Markov chains to model page transition probabilities and next-click prediction. Presented at London Measurecamp #12.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="Alex Papageorgiou Consulting"></a>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../testimonials.html">Testimonials</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+        <li><a href="../contact.html" class="btn btn-primary">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="post-back container">
+    <a href="../blog.html">Back to Blog</a>
+  </div>
+
+  <header class="post-header">
+    <div class="container--prose">
+      <h1>Clickstream analytics with Markov Chains — London Measurecamp #12</h1>
+      <div class="post-meta">
+        <span class="post-date">19 March 2018</span>
+        <span class="post-tag">Clickstream</span>
+      </div>
+    </div>
+  </header>
+
+  <article class="post-body">
+    <div class="container--prose">
+      <p>This talk provides an overview of clickstream analysis and presents an example of using Markov chains to model the clickstream and to provide transition probabilities from one page to another. It also demonstrates how to predict the user's next click given the sequence of previous page requests.</p>
+
+      <p>Presentation: <em>Clickstream measure camp12</em> by Alexandros Papageorgiou.</p>
+
+      <h2>Q&amp;A</h2>
+
+      <p><strong>Roshan asked:</strong> "Thank you for this session. It's given me great insight into how attribution works. Do you think Regression can be combined with markov chains for more efficient path analysis?"</p>
+
+      <p><strong>Alexandros Papageorgiou replied:</strong> "You can use regression to predict the absorbing state, purchase or exit, based on the sequence of previous pages visited. The clickstream package has a function called frequencies that can convert your clickstream into a compatible data structure for that type of regression. That said I wouldn't consider regression as the most natural approach to working with clickstreams - at least not to the same degree as other methods like network analysis or association rules for example."</p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-name">Alex Papageorgiou Consulting</span>
+      <p class="footer-meta">&copy; <span id="yr"></span> Alex Papageorgiou &middot; <a href="mailto:alex@alex-papageo.com">alex@alex-papageo.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => { const open = links.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', open); });
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xoogler.co Solopreneurs &amp; Freelancers Group — Alex Papageorgiou</title>
+  <meta name="description" content="The launch of the Xoogler.co solopreneurs and freelancers subgroup — building community for ex-Google independent consultants and entrepreneurs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="Alex Papageorgiou Consulting"></a>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../testimonials.html">Testimonials</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+        <li><a href="../contact.html" class="btn btn-primary">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="post-back container">
+    <a href="../blog.html">Back to Blog</a>
+  </div>
+
+  <header class="post-header">
+    <div class="container--prose">
+      <h1>Xoogler.co Solopreneurs &amp; Freelancers Group</h1>
+      <div class="post-meta">
+        <span class="post-date">14 January 2021</span>
+        <span class="post-tag">Community</span>
+      </div>
+    </div>
+  </header>
+
+  <article class="post-body">
+    <div class="container--prose">
+      <img src="https://www.alex-papageo.com/uploads/2/3/5/7/23571418/xooglergroupmedium_orig.png" alt="Xoogler.co Solopreneurs and Freelancers Group" style="width:100%;border-radius:8px;margin-bottom:1.5rem;">
+
+      <p>I was never involved in community building previously but it all changed last year when Chris Fong, the founder of Xoogler.co (a global community of ex Googlers) encouraged me to start a subgroup within Xoogler.co to bring together the solopreneurs and freelancers of the community. So I did and the experience so far has been phenomenal.</p>
+
+      <p>Three online events were organised in 2020 and the group grew to over 100 members. In two of the three events I had the pleasure to host 2 notable former Googlers who shared their experiences and advice about independent consulting and entrepreneurship with the group members.</p>
+
+      <p>Moreover, now startups from Xoogler.co and other business networks have an organised directory of ex Google freelancers that they can refer to if they need specialised help with their projects.</p>
+
+      <img src="https://www.alex-papageo.com/uploads/2/3/5/7/23571418/benkrista_orig.png" alt="Ex-Googlers Ben Legg and Krista Seiden were the first guest speakers at the virtual events" style="width:100%;border-radius:8px;margin:1rem 0 1.5rem;">
+
+      <p>Ex-Googlers Ben Legg &amp; Krista Seiden were the first guest speakers at the virtual events.</p>
+
+      <p>You can check out the following medium posts, if you'd like to learn more:</p>
+
+      <ul>
+        <li>A summary of the virtual event with Ben Legg, former COO of Google Europe and currently founder of the Portfolio Collective</li>
+        <li>A summary of the virtual event with Krista Seiden, former Google Analytics evangelist and founder of KS Digital</li>
+        <li>My story building the Xoogler.co solopreneurs and freelancers group</li>
+      </ul>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-name">Alex Papageorgiou Consulting</span>
+      <p class="footer-meta">&copy; <span id="yr"></span> Alex Papageorgiou &middot; <a href="mailto:alex@alex-papageo.com">alex@alex-papageo.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => { const open = links.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', open); });
+  </script>
+</body>
+</html>

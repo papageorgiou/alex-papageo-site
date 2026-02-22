@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Analytics with R — Alex Papageorgiou</title>
+  <meta name="description" content="An introduction to using R for web analytics — interfacing with the Google Analytics API, practical analytics applications, and custom visualisations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="Alex Papageorgiou Consulting"></a>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../testimonials.html">Testimonials</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+        <li><a href="../contact.html" class="btn btn-primary">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="post-back container">
+    <a href="../blog.html">Back to Blog</a>
+  </div>
+
+  <header class="post-header">
+    <div class="container--prose">
+      <h1>Web Analytics with R</h1>
+      <div class="post-meta">
+        <span class="post-date">1 September 2015</span>
+        <span class="post-tag">R</span>
+      </div>
+    </div>
+  </header>
+
+  <article class="post-body">
+    <div class="container--prose">
+      <p>From niche bloggers to multinational corporations, everyone is interested in monitoring their web traffic and its patterns across time.</p>
+
+      <p>Google Analytics is the most widely used solution to keep track of this type of data. It provides a UI for a wide range of reports as well as possibilities for various types of visualizations.</p>
+
+      <p>Moreover, the availability of the Analytics API coupled with the corresponding R packages can now give more options for custom web analyses.</p>
+
+      <p>The talk covers the following:</p>
+
+      <ul>
+        <li>What are web analytics? How do they work?</li>
+        <li>Interfacing with the Analytics Reporting API via an R package (RGA).</li>
+        <li>Practical analytics applications with R.</li>
+      </ul>
+
+      <p>Presentation: <em>Web analytics with R</em> by Alexandros Papageorgiou.</p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-name">Alex Papageorgiou Consulting</span>
+      <p class="footer-meta">&copy; <span id="yr"></span> Alex Papageorgiou &middot; <a href="mailto:alex@alex-papageo.com">alex@alex-papageo.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => { const open = links.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', open); });
+  </script>
+</body>
+</html>

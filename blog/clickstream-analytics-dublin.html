@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clickstream Analytics — Data Science and Engineering Club Dublin — Alex Papageorgiou</title>
+  <meta name="description" content="Clickstream analytics presentation at the Data Science and Engineering Club Dublin meetup.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="Alex Papageorgiou Consulting"></a>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../testimonials.html">Testimonials</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+        <li><a href="../contact.html" class="btn btn-primary">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="post-back container">
+    <a href="../blog.html">Back to Blog</a>
+  </div>
+
+  <header class="post-header">
+    <div class="container--prose">
+      <h1>Clickstream Analytics — Data Science and Engineering Club Dublin</h1>
+      <div class="post-meta">
+        <span class="post-date">2 June 2018</span>
+        <span class="post-tag">Clickstream</span>
+      </div>
+    </div>
+  </header>
+
+  <article class="post-body">
+    <div class="container--prose">
+      <p>Meetup event link: <a href="https://www.meetup.com/Data-Science-and-Engineering-Club/events/250803802/" target="_blank" rel="noopener">Data Science and Engineering Club Dublin — Event</a></p>
+
+      <p>Presentation: <em>Clickstream analytics with Markov Chains</em> by Alexandros Papageorgiou.</p>
+
+      <p>This talk explores clickstream analytics using Markov chain models to understand user navigation patterns, page transition probabilities, and next-click prediction from sequences of previous page requests.</p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-name">Alex Papageorgiou Consulting</span>
+      <p class="footer-meta">&copy; <span id="yr"></span> Alex Papageorgiou &middot; <a href="mailto:alex@alex-papageo.com">alex@alex-papageo.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => { const open = links.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', open); });
+  </script>
+</body>
+</html>

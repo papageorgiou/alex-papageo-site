@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Kaggle Experience from a Digital Analyst's Perspective — Alex Papageorgiou</title>
+  <meta name="description" content="Talk on the advantages digital analysts can gain from leveraging Kaggle — presented at Digital Analytics Thessaloniki, MeasureCamp London and MeasureCamp Dublin.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="Alex Papageorgiou Consulting"></a>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../testimonials.html">Testimonials</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+        <li><a href="../contact.html" class="btn btn-primary">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="post-back container">
+    <a href="../blog.html">Back to Blog</a>
+  </div>
+
+  <header class="post-header">
+    <div class="container--prose">
+      <h1>The Kaggle Experience from a Digital Analyst's Perspective</h1>
+      <div class="post-meta">
+        <span class="post-date">1 February 2019</span>
+        <span class="post-tag">Kaggle</span>
+      </div>
+    </div>
+  </header>
+
+  <article class="post-body">
+    <div class="container--prose">
+      <p>Digital Analytics Thessaloniki is one of the most popular and active tech meetups in the city. I had the opportunity to share my experience of taking part in the Kaggle competition with Google Analytics data.</p>
+
+      <p>The presentation focused not on the competition itself, but rather on the advantages digital analysts can gain from leveraging Kaggle. Kaggle now encompasses much more than just competitions.</p>
+
+      <p>Presentation: <em>The Kaggle Experience from a Digital Analysts' Perspective</em> by Alexandros Papageorgiou.</p>
+
+      <p>Version 2.0 of this talk was presented at MeasureCamp London, and version 3.0 was presented at MeasureCamp Dublin.</p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-name">Alex Papageorgiou Consulting</span>
+      <p class="footer-meta">&copy; <span id="yr"></span> Alex Papageorgiou &middot; <a href="mailto:alex@alex-papageo.com">alex@alex-papageo.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => { const open = links.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', open); });
+  </script>
+</body>
+</html>

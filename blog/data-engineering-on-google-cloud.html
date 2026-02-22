@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Engineering on Google Cloud — Alex Papageorgiou</title>
+  <meta name="description" content="A guide to big data, machine learning and data engineering on Google Cloud — covering learning options, specialisation review and practical tips.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="container">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo.png" alt="Alex Papageorgiou Consulting"></a>
+      <button class="nav-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../testimonials.html">Testimonials</a></li>
+        <li><a href="../blog.html" class="active">Blog</a></li>
+        <li><a href="../contact.html" class="btn btn-primary">Get in Touch</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="post-back container">
+    <a href="../blog.html">Back to Blog</a>
+  </div>
+
+  <header class="post-header">
+    <div class="container--prose">
+      <h1>Data Engineering on Google Cloud</h1>
+      <div class="post-meta">
+        <span class="post-date">3 June 2020</span>
+        <span class="post-tag">Google Cloud</span>
+      </div>
+    </div>
+  </header>
+
+  <article class="post-body">
+    <div class="container--prose">
+      <img src="https://www.alex-papageo.com/uploads/2/3/5/7/23571418/published/kelly-sikkema-z9au36chmqi-unsplash.jpg?1591196957" alt="Data Engineering on Google Cloud" style="width:100%;border-radius:8px;margin-bottom:1.5rem;">
+
+      <p>"If you are a data professional looking to gain a good understanding of the big data, machine learning and data engineering landscape on Google Cloud, this guide explains the learning options available to you and offers many practical tips to help you accomplish your learning goals."</p>
+
+      <p>Topics covered:</p>
+
+      <ol>
+        <li>Overview of the relevant learning options</li>
+        <li>Why to consider the Data Engineering specialisation</li>
+        <li>What the material covers</li>
+        <li>Review: what's good / what's missing / what are the highlights</li>
+        <li>Practical tips for the specialisation</li>
+        <li>Next steps after completing it</li>
+        <li>The Certification Exam</li>
+      </ol>
+
+      <p>The full article is published on Towards Data Science / Medium. Please follow the link to read the complete guide.</p>
+    </div>
+  </article>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-name">Alex Papageorgiou Consulting</span>
+      <p class="footer-meta">&copy; <span id="yr"></span> Alex Papageorgiou &middot; <a href="mailto:alex@alex-papageo.com">alex@alex-papageo.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.getElementById('nav-links');
+    toggle.addEventListener('click', () => { const open = links.classList.toggle('is-open'); toggle.setAttribute('aria-expanded', open); });
+  </script>
+</body>
+</html>
