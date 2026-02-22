@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.alex-papageo.com)",
+      "Bash(curl:*)",
+      "Bash(ls:*)",
+      "Bash(git config:*)",
+      "Bash(where:*)",
+      "Bash(winget install:*)",
+      "Bash(GH=\"/c/Program Files/GitHub CLI/gh.exe\")",
+      "Bash(\"$GH\" auth status)",
+      "Bash(\"$GH\" auth login --web --hostname github.com --git-protocol https)",
+      "Bash(\"$GH\" api repos/papageorgiou/alex-papageo-site/pages --method POST --field source[branch]=main --field source[path]=/)",
+      "Bash(\"$GH\" api repos/papageorgiou/alex-papageo-site/pages --jq '.html_url')",
+      "Bash(\"$GH\" repo edit papageorgiou/alex-papageo-site --visibility private)",
+      "Bash(\"$GH\" repo edit papageorgiou/alex-papageo-site --visibility private --accept-visibility-change-consequences)",
+      "Bash(__NEW_LINE_993e9c9d5b6d7f4e__ git add -A)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(\"$GH\" repo edit papageorgiou/alex-papageo-site --visibility public --accept-visibility-change-consequences)"
+    ]
+  }
+}
